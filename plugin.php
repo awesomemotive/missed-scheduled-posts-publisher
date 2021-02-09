@@ -5,7 +5,7 @@
  * Version:           1.0.0-beta
  * Requires at least: 5.0
  * Requires PHP:      5.6
- * Author:            WP Beginner
+ * Author:            WPBeginner
  * Author URI:        https://www.wpbeginner.com/
  * License:           GPLv2
  * Text Domain:       missed-scheduled-posts-publisher
