@@ -1,12 +1,12 @@
 <?php
 
-namespace WPB\scheduledPostCatcher;
+namespace WPB\MissedScheduledPostsPublisher;
 
-const ACTION              = 'wpb_scheduled_post_catcher';
+const ACTION              = 'wpb_missed_scheduled_posts_publisher';
 const BATCH_LIMIT         = 20;
 const FALLBACK_MULTIPLIER = 1.1;
 const FREQUENCY           = 900;
-const OPTION_NAME         = 'wpb-scheduled-post-catcher-last-run';
+const OPTION_NAME         = 'wpb-missed-scheduled-posts-publisher-last-run';
 
 function bootstrap() {
 	add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_scripts' );
