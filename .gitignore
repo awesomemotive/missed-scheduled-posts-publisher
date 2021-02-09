@@ -1,0 +1,21 @@
+# System files
+##############
+.DS_Store
+ehthumbs.db
+Thumbs.db
+._*
+
+# Dependencies
+##############
+/node_modules/
+/vendor/
+
+# Build files
+#############
+/.tmp-svn
+/js/build/
+
+# Editor configs
+################
+/.vscode
+/.idea
