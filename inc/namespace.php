@@ -9,7 +9,7 @@ const FREQUENCY           = 900;
 const OPTION_NAME         = 'wpb-missed-scheduled-posts-publisher-last-run';
 
 function bootstrap() {
-	add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_scripts' );
+	add_action( 'send_headers', __NAMESPACE__ . '\\send_headers' );
 	add_action( 'shutdown', __NAMESPACE__ . '\\loopback' );
 	add_action( 'wp_ajax_nopriv_' . ACTION, __NAMESPACE__ . '\\admin_ajax' );
 	add_action( 'wp_ajax_' . ACTION, __NAMESPACE__ . '\\admin_ajax' );
@@ -68,6 +68,23 @@ function verify_no_priv_nonce( $nonce ) {
 	}
 
 	return false;
+}
+
+/**
+ * Prevent caching of requests including the AJAX script.
+ *
+ * Includes the no-caching headers if the response will include the
+ * AJAX fallback script. This is to prevent excess calls to the
+ * admin-ajax.php action.
+ */
+function send_headers() {
+	$last_run = (int) get_option( OPTION_NAME, 0 );
+	if ( $last_run >= ( time() - ( FALLBACK_MULTIPLIER * FREQUENCY ) ) ) {
+		return;
+	}
+
+	add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_scripts' );
+	nocache_headers();
 }
 
 /**
