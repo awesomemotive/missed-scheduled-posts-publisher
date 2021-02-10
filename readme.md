@@ -14,7 +14,7 @@ WordPress can sometimes fail to publish a scheduled post at the correct time. Th
 
 This plugin does one thing and does it well: it ensures any scheduled (future) posts are published on time. The plugin has been developed with performance in mind so will not affect the perceived performance of your website.
 
-Every fifteen minutes the plugin checks for posts that have missed their scheduled on time and will publish them. Multiple techniques for publishing your site's missed posts to ensure a scheduled post is not missed.
+Every fifteen minutes the plugin checks for posts that have missed their scheduled on time and will publish them. Multiple techniques for checking your site's missed posts are used to ensure a scheduled post is not missed.
 
 ### Credits
 
@@ -36,7 +36,7 @@ If you find this plugin useful, please leave a good rating and consider checking
 
 ## Installation
 
-1. Install Insert Headers and Footers by uploading the `insert-headers-and-footers` directory to the `/wp-content/plugins/` directory. (See instructions on [how to install a WordPress plugin](https://www.wpbeginner.com/beginners-guide/step-by-step-guide-to-install-a-wordpress-plugin-for-beginners/).)
+1. Install Insert Headers and Footers by uploading the `missed-scheduled-posts-publisher` directory to the `/wp-content/plugins/` directory. (See instructions on [how to install a WordPress plugin](https://www.wpbeginner.com/beginners-guide/step-by-step-guide-to-install-a-wordpress-plugin-for-beginners/).)
 2. Activate Missed Scheduled Posts Publisher through the `Plugins` menu in WordPress.
 
 [youtube https://www.youtube.com/watch?v=QXbrdVjWaME]
