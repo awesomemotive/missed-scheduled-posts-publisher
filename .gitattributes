@@ -1,0 +1,12 @@
+## Tests and actions
+/.github export-ignore
+
+## Git config files
+/.gitattributes export-ignore
+/.gitignore export-ignore
+
+## Dev tools
+/*.xml
+/*.xml.dist
+/.*
+/composer.*
