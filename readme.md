@@ -2,6 +2,7 @@
 
 Stable tag: 1.0.0  
 Requires at least: 5.0  
+Tested up to:      5.6  
 Requires PHP:      5.6  
 License:           GPLv2  
 Tags:              Scheduled posts, Missed scheduled posts, Cron  
