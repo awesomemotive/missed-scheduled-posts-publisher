@@ -6,7 +6,7 @@ Tested up to:      5.6
 Requires PHP:      5.6  
 License:           GPLv2  
 Tags:              Scheduled posts, Missed scheduled posts, Cron  
-Contributors:      WPbeginner, smub, jaredatch, peterwilsoncc.
+Contributors:      WPbeginner, smub, jaredatch, peterwilsoncc
 
 WordPress can sometimes fail to publish a scheduled post at the correct time. This monitors your site and publishes any that have missed their publication time.
 
