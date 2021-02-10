@@ -6,7 +6,6 @@
 /.gitignore export-ignore
 
 ## Dev tools
-/*.xml
-/*.xml.dist
-/.*
-/composer.*
+*.xml export-ignore
+*.xml.dist export-ignore
+composer.* export-ignore
