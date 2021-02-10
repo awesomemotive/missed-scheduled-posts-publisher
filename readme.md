@@ -39,7 +39,7 @@ If you find this plugin useful, please leave a good rating and consider checking
 1. Install Insert Headers and Footers by uploading the `insert-headers-and-footers` directory to the `/wp-content/plugins/` directory. (See instructions on [how to install a WordPress plugin](https://www.wpbeginner.com/beginners-guide/step-by-step-guide-to-install-a-wordpress-plugin-for-beginners/).)
 2. Activate Missed Scheduled Posts Publisher through the `Plugins` menu in WordPress.
 
-[youtube https://www.youtube.com/watch?v=AXM1QgMODW0]
+[youtube https://www.youtube.com/watch?v=QXbrdVjWaME]
 
 ## Frequently Asked Questions
 
