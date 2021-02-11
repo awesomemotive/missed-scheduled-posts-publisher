@@ -1,4 +1,4 @@
-# Missed Scheduled Posts Publisher
+=== Missed Scheduled Posts Publisher ===
 
 Stable tag: 1.0.0
 Requires at least: 5.0
