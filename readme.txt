@@ -61,7 +61,6 @@ If you like our Missed Scheduled Posts Publisher plugin, then consider checking 
 * [PushEngage](https://www.pushengage.com/) – Connect with visitors after they leave your website with the leading web push notification plugin.
 * [TrustPulse](https://trustpulse.com/) – Add real-time social proof notifications to boost your store conversions by up to 15%.
 
-
 Visit [WPBeginner](https://www.wpbeginner.com/) to learn from our [WordPress tutorials](https://www.wpbeginner.com/category/wp-tutorials/) and find out about other [best WordPress plugins](https://www.wpbeginner.com/category/plugins/).
 
 == Installation ==
