@@ -8,17 +8,37 @@ License:           GPLv2
 Tags:              Scheduled posts, Missed scheduled posts, Cron
 Contributors:      WPbeginner, smub, jaredatch, peterwilsoncc
 
-WordPress can sometimes fail to publish a scheduled post at the correct time. This monitors your site and publishes any that have missed their publication time.
+Are your scheduled posts not publishing? This plugin fixes the missed schedule error and triggers your scheduled posts to publish without impacting performance.
 
 == Description ==
 
-This plugin does one thing and does it well: it ensures any scheduled (future) posts are published on time. The plugin has been developed with performance in mind so will not affect the perceived performance of your website.
+= WordPress Missed Scheduled Plugin =
 
-Every fifteen minutes the plugin checks for posts that have missed their scheduled on time and will publish them. Multiple techniques for checking your site's missed posts are used to ensure a scheduled post is not missed.
+Are you seeing a "missed schedule" error on your scheduled posts?
+
+This plugin does one thing and does it well: it fixes the missed schedule error and triggers your scheduled posts to publish on time. We've developed this post scheduler plugin with performance in mind, so it won't affect the speed or performance of your website.
+
+= What Causes the Missed Schedule Error? =
+
+Having trouble with WordPress scheduled posts not publishing?
+
+That's because scheduled posts are triggered to publish by something called "WordPress cron jobs". Cron is a technical term for commands that run on a scheduled time, like your scheduled posts in WordPress.
+
+Technically, a real cron job will run at the server level. But because WordPress doesn't have access to that level, it runs a simulated cron.
+
+These simulated cron jobs, like scheduled posts, are supposed to be triggered whenever a person or bot visits your site. But because it's not a real cron job, sometimes it causes a missed schedule error.
+
+= How to Fix the Missed Schedule Error in WordPress =
+
+Every fifteen minutes this post scheduler plugin checks for posts that have the missed schedule error, and will automatically publish them for you.
+
+Multiple techniques for checking your site's missed posts are used to make sure a scheduled post is not missed.
 
 = Credits =
 
-This plugin is created by the [WPBeginner](https://www.wpbeginner.com/) team at [Awesome Motive](https://awesomemotive.com/).
+This plugin is created by the [WPBeginner](https://www.wpbeginner.com/) team.
+
+= What's Next? =
 
 To learn more about WordPress, you can visit [WPBeginner](https://www.wpbeginner.com/) for tutorials on topics like:
 
@@ -28,11 +48,21 @@ To learn more about WordPress, you can visit [WPBeginner](https://www.wpbeginner
 
 ...and many more [WordPress tutorials](https://www.wpbeginner.com/category/wp-tutorials/).
 
-If you find this plugin useful, please leave a good rating and consider checking out our other projects:
+If you like our Missed Scheduled Posts Publisher plugin, then consider checking out our other projects:
 
-* [OptinMonster](https://optinmonster.com/) - Get More Email Subscribers
-* [WPForms](https://wpforms.com/) - Best Contact Form Builder Plugin
-* [MonsterInsights](https://www.monsterinsights.com/) - Best Google Analytics Plugin
+* [OptinMonster](https://optinmonster.com/) – Get More Email Subscribers with the most popular conversion optimization plugin for WordPress.
+* [WPForms](https://wpforms.com/) – #1 drag & drop online form builder for WordPress (trusted by 4 million sites).
+* [MonsterInsights](https://www.monsterinsights.com/) – See the Stats that Matter and Grow Your Business with Confidence. Best Google Analytics Plugin for WordPress.
+* [SeedProd](https://www.seedprod.com/) – Create beautiful landing pages with our powerful drag & drop landing page builder.
+* [WP Mail SMTP](https://wpmailsmtp.com/) – Improve email deliverability for your contact form with the most popular SMTP plugin for WordPress.
+* [RafflePress](https://rafflepress.com/) – Best WordPress giveaway and contest plugin to grow traffic and social followers.
+* [Smash Balloon](https://www.smashballoon.com/) – #1 social feeds plugin for WordPress - display social media content in WordPress without code.
+* [AIOSEO](https://aioseo.com/) – the original WordPress SEO plugin to help you rank higher in search results (trusted by over 2 million sites).
+* [PushEngage](https://www.pushengage.com/) – Connect with visitors after they leave your website with the leading web push notification plugin.
+* [TrustPulse](https://trustpulse.com/) – Add real-time social proof notifications to boost your store conversions by up to 15%.
+
+
+Visit [WPBeginner](https://www.wpbeginner.com/) to learn from our [WordPress tutorials](https://www.wpbeginner.com/category/wp-tutorials/) and find out about other [best WordPress plugins](https://www.wpbeginner.com/category/plugins/).
 
 == Installation ==
 
@@ -43,10 +73,10 @@ If you find this plugin useful, please leave a good rating and consider checking
 
 == Frequently Asked Questions ==
 
-= My post was published late, why? =
+= My scheduled post was published late, why? =
 
-To avoid impacting the performance of your WordPress site, this plugin checks for scheduled posts once every fifteen minutes. This is a compromise as avoiding a performance impact is important as the faster your site loads, the higher Google will rank it in organic search listings.
+To avoid impacting the performance of your WordPress site, the Missed Scheduled Posts Publisher plugin checks for scheduled posts once every fifteen minutes. This is important because faster sites tend to rank higher in search results and get more traffic and conversions.
 
 = I've enabled this on my site, why can't I see it in the admin? =
 
-Missed Scheduled Posts Publisher is an enable and forget plugin. There is no user set up required so once the plugin is enabled, your site's scheduled posts will be checked.
+Missed Scheduled Posts Publisher is a set-and-forget plugin. There are no settings, since your site's scheduled posts will automatically be checked when the plugin is installed and activated.
