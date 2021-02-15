@@ -36,36 +36,36 @@ Multiple techniques for checking your site's missed posts are used to make sure 
 
 = Credits =
 
-This plugin is created by the [WPBeginner](https://www.wpbeginner.com/) team.
+Missed Scheduled Posts Publisher is created by the <a href="https://www.wpbeginner.com/" rel="friend">WPBeginner</a> team.
 
 = What's Next? =
 
-To learn more about WordPress, you can visit [WPBeginner](https://www.wpbeginner.com/) for tutorials on topics like:
+To learn more about WordPress, you can visit <a href="https://www.wpbeginner.com/" rel="friend">WPBeginner</a> for tutorials on topics like:
 
-* [WordPress Speed and Performance](https://www.wpbeginner.com/wordpress-performance-speed/)
-* [WordPress Security](https://www.wpbeginner.com/wordpress-security/)
-* [WordPress SEO](https://www.wpbeginner.com/wordpress-seo/)
+* <a href="http://www.wpbeginner.com/wordpress-performance-speed/" rel="friend" title="Ultimate Guide to WordPress Speed and Performance">WordPress Speed and Performance</a>
+* <a href="http://www.wpbeginner.com/wordpress-security/" rel="friend" title="Ultimate WordPress Security Guide">WordPress Security</a>
+* <a href="http://www.wpbeginner.com/wordpress-seo/" rel="friend" title="Ultimate WordPress SEO Guide for Beginners">WordPress SEO</a>
 
-...and many more [WordPress tutorials](https://www.wpbeginner.com/category/wp-tutorials/).
+...and many more <a href="http://www.wpbeginner.com/category/wp-tutorials/" rel="friend" title="WordPress Tutorials">WordPress tutorials</a>.
 
 If you like our Missed Scheduled Posts Publisher plugin, then consider checking out our other projects:
 
-* [OptinMonster](https://optinmonster.com/) – Get More Email Subscribers with the most popular conversion optimization plugin for WordPress.
-* [WPForms](https://wpforms.com/) – #1 drag & drop online form builder for WordPress (trusted by 4 million sites).
-* [MonsterInsights](https://www.monsterinsights.com/) – See the Stats that Matter and Grow Your Business with Confidence. Best Google Analytics Plugin for WordPress.
-* [SeedProd](https://www.seedprod.com/) – Create beautiful landing pages with our powerful drag & drop landing page builder.
-* [WP Mail SMTP](https://wpmailsmtp.com/) – Improve email deliverability for your contact form with the most popular SMTP plugin for WordPress.
-* [RafflePress](https://rafflepress.com/) – Best WordPress giveaway and contest plugin to grow traffic and social followers.
-* [Smash Balloon](https://www.smashballoon.com/) – #1 social feeds plugin for WordPress - display social media content in WordPress without code.
-* [AIOSEO](https://aioseo.com/) – the original WordPress SEO plugin to help you rank higher in search results (trusted by over 2 million sites).
-* [PushEngage](https://www.pushengage.com/) – Connect with visitors after they leave your website with the leading web push notification plugin.
-* [TrustPulse](https://trustpulse.com/) – Add real-time social proof notifications to boost your store conversions by up to 15%.
+* <a href="https://optinmonster.com/" rel="friend">OptinMonster</a> – Get More Email Subscribers with the most popular conversion optimization plugin for WordPress.
+* <a href="https://wpforms.com/" rel="friend">WPForms</a> – #1 drag & drop online form builder for WordPress (trusted by 4 million sites).
+* <a href="https://www.monsterinsights.com/" rel="friend">MonsterInsights</a> – See the Stats that Matter and Grow Your Business with Confidence. Best Google Analytics Plugin for WordPress.
+* <a href="https://www.seedprod.com/" rel="friend">SeedProd</a> – Create beautiful landing pages with our powerful drag & drop landing page builder.
+* <a href="https://wpmailsmtp.com/" rel="friend">WP Mail SMTP</a> – Improve email deliverability for your contact form with the most popular SMTP plugin for WordPress.
+* <a href="https://rafflepress.com/" rel="friend">RafflePress</a> – Best WordPress giveaway and contest plugin to grow traffic and social followers.
+* <a href="https://www.smashballoon.com/" rel="friend">Smash Balloon</a> – #1 social feeds plugin for WordPress - display social media content in WordPress without code.
+* <a href="https://aioseo.com/" rel="friend">AIOSEO</a> – the original WordPress SEO plugin to help you rank higher in search results (trusted by over 2 million sites).
+* <a href="https://www.pushengage.com/" rel="friend">PushEngage</a> – Connect with visitors after they leave your website with the leading web push notification plugin.
+* <a href="https://trustpulse.com/" rel="friend">TrustPulse</a> – Add real-time social proof notifications to boost your store conversions by up to 15%.
 
-Visit [WPBeginner](https://www.wpbeginner.com/) to learn from our [WordPress tutorials](https://www.wpbeginner.com/category/wp-tutorials/) and find out about other [best WordPress plugins](https://www.wpbeginner.com/category/plugins/).
+Visit <a href="http://www.wpbeginner.com/" rel="friend">WPBeginner</a> to learn from our <a href="http://www.wpbeginner.com/category/wp-tutorials/" rel="friend">WordPress Tutorials</a> and find out about other <a href="http://www.wpbeginner.com/category/plugins/" rel="friend">best WordPress plugins</a>.
 
 == Installation ==
 
-1. Install Insert Headers and Footers by uploading the `missed-scheduled-posts-publisher` directory to the `/wp-content/plugins/` directory. (See instructions on [how to install a WordPress plugin](https://www.wpbeginner.com/beginners-guide/step-by-step-guide-to-install-a-wordpress-plugin-for-beginners/).)
+1. Install Insert Headers and Footers by uploading the `missed-scheduled-posts-publisher` directory to the `/wp-content/plugins/` directory. (See instructions on <a href="https://www.wpbeginner.com/beginners-guide/step-by-step-guide-to-install-a-wordpress-plugin-for-beginners/" rel="friend">how to install a WordPress plugin</a>.)
 2. Activate Missed Scheduled Posts Publisher through the `Plugins` menu in WordPress.
 
 [youtube https://www.youtube.com/watch?v=QXbrdVjWaME]
