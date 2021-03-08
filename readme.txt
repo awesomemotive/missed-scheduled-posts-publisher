@@ -1,4 +1,4 @@
-=== Missed Scheduled Posts Publisher ===
+=== Missed Scheduled Posts Publisher by WPBeginner ===
 
 Stable tag:        1.0.0
 Requires at least: 5.0
@@ -12,7 +12,7 @@ Are your scheduled posts not publishing? This plugin fixes the missed schedule e
 
 == Description ==
 
-= WordPress Missed Scheduled Plugin =
+= WordPress Missed Scheduled Posts Publisher by WPBeginner =
 
 Are you seeing a "missed schedule" error on your scheduled posts?
 

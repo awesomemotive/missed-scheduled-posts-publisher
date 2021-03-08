@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Missed Scheduled Posts Publisher
+ * Plugin Name:       Missed Scheduled Posts Publisher by WPBeginner
  * Description:       Catches scheduled posts that have been missed and publishes them.
  * Version:           1.0.0
  * Requires at least: 5.0
