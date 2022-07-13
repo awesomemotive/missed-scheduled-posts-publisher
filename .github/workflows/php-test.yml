@@ -1,49 +1,49 @@
-name: Unit Testing
+# name: Unit Testing
 
-on:
-  push:
-    branches:
-      - main
-    # Only run if PHP-related files changed.
-    paths:
-      - '.github/workflows/php-test.yml'
-      - '**.php'
-      - 'phpunit.xml.dist'
-      - 'tests/multisite.xml'
-      - 'composer.json'
-      - 'composer.lock'
-  pull_request:
-    branches:
-      - main
-    # Only run if PHP-related files changed.
-    paths:
-      - '.github/workflows/php-test.yml'
-      - '**.php'
-      - 'phpunit.xml.dist'
-      - 'tests/multisite.xml'
-      - 'composer.json'
-      - 'composer.lock'
-    types:
-      - opened
-      - reopened
-      - synchronize
+# on:
+#   push:
+#     branches:
+#       - main
+#     # Only run if PHP-related files changed.
+#     paths:
+#       - '.github/workflows/php-test.yml'
+#       - '**.php'
+#       - 'phpunit.xml.dist'
+#       - 'tests/multisite.xml'
+#       - 'composer.json'
+#       - 'composer.lock'
+#   pull_request:
+#     branches:
+#       - main
+#     # Only run if PHP-related files changed.
+#     paths:
+#       - '.github/workflows/php-test.yml'
+#       - '**.php'
+#       - 'phpunit.xml.dist'
+#       - 'tests/multisite.xml'
+#       - 'composer.json'
+#       - 'composer.lock'
+#     types:
+#       - opened
+#       - reopened
+#       - synchronize
 
-jobs:
-  php-test:
-    name: PHP
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
-    steps:
-      - uses: styfle/cancel-workflow-action@0.8.0
-      - uses: actions/checkout@v2
-      - name: Setup Node.js (.nvmrc)
-        uses: actions/setup-node@v1
-        with:
-          node-version: '14'
-          cache: npm
-      - name: npm install
-        run: npm ci
-      - name: Setup WordPress
-        run: npm run start
-      - name: Running single site unit tests
-        run: npm run test-php
+# jobs:
+#   php-test:
+#     name: PHP
+#     runs-on: ubuntu-latest
+#     timeout-minutes: 20
+#     steps:
+#       - uses: styfle/cancel-workflow-action@0.8.0
+#       - uses: actions/checkout@v2
+#       - name: Setup Node.js (.nvmrc)
+#         uses: actions/setup-node@v1
+#         with:
+#           node-version: '14'
+#           cache: npm
+#       - name: npm install
+#         run: npm ci
+#       - name: Setup WordPress
+#         run: npm run start
+#       - name: Running single site unit tests
+#         run: npm run test-php
