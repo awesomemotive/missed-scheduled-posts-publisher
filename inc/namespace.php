@@ -8,6 +8,17 @@ const FALLBACK_MULTIPLIER = 1.1;
 const FREQUENCY           = 900;
 const OPTION_NAME         = 'wpb-missed-scheduled-posts-publisher-last-run';
 
+
+/**
+ * Filters the frequency to allow programmaticaly control.
+ * 
+ * @param int $frequency The frequency in seconds.
+ */
+function get_run_frequency() {
+	$frequency = FREQUENCY;
+	return (int) apply_filters( 'wpb_missed_scheduled_posts_publisher_frequency', $frequency );
+}
+
 function bootstrap() {
 	add_action( 'send_headers', __NAMESPACE__ . '\\send_headers' );
 	add_action( 'shutdown', __NAMESPACE__ . '\\loopback' );
@@ -79,7 +90,8 @@ function verify_no_priv_nonce( $nonce ) {
  */
 function send_headers() {
 	$last_run = (int) get_option( OPTION_NAME, 0 );
-	if ( $last_run >= ( time() - ( FALLBACK_MULTIPLIER * FREQUENCY ) ) ) {
+	$frequency = get_run_frequency();
+	if ( $last_run >= ( time() - ( FALLBACK_MULTIPLIER * $frequency ) ) ) {
 		return;
 	}
 
@@ -92,7 +104,8 @@ function send_headers() {
  */
 function enqueue_scripts() {
 	$last_run = (int) get_option( OPTION_NAME, 0 );
-	if ( $last_run >= ( time() - ( FALLBACK_MULTIPLIER * FREQUENCY ) ) ) {
+	$frequency = get_run_frequency();
+	if ( $last_run >= ( time() - ( FALLBACK_MULTIPLIER * $frequency ) ) ) {
 		return;
 	}
 
@@ -139,7 +152,8 @@ function enqueue_scripts() {
  */
 function loopback() {
 	$last_run = (int) get_option( OPTION_NAME, 0 );
-	if ( $last_run >= ( time() - FREQUENCY ) ) {
+	$frequency = get_run_frequency();
+	if ( $last_run >= ( time() - $frequency ) ) {
 		return;
 	}
 
@@ -173,7 +187,8 @@ function admin_ajax() {
 	}
 
 	$last_run = (int) get_option( OPTION_NAME, 0 );
-	if ( $last_run >= ( time() - FREQUENCY ) ) {
+	$frequency = get_run_frequency();
+	if ( $last_run >= ( time() - $frequency ) ) {
 		wp_send_json_success();
 	}
 
