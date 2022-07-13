@@ -1,9 +1,10 @@
 {
   "name": "missed-scheduled-posts-publisher",
   "scripts": {
-    "start": "npm run wp-env start",
-    "pretest-php": "wp-env run composer 'install --no-interaction'",
-    "test-php": "wp-env run phpunit 'phpunit -c /var/www/html/wp-content/plugins/performance/phpunit.xml.dist --verbose'",
+    "env:start": "npm run wp-env start",
+    "env:stop": "npm run wp-env stop",
+    "pretest-php": "wp-env run composer 'install --ignore-platform-reqs'",
+    "test-php": "wp-env run phpunit 'phpunit -c /var/www/html/wp-content/plugins/missed-scheduled-posts-publisher/phpunit.xml.dist --verbose'",
     "wp-env": "wp-env"
   },
   "devDependencies": {
