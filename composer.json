@@ -4,7 +4,9 @@
     "type": "wordpress-plugin",
     "license": "GNU General Public License v2.0 or later",
     "minimum-stability": "stable",
-    "require": {},
+    "require": {
+        "phpunit/phpunit": "^7"
+    },
     "require-dev": {
         "dealerdirect/phpcodesniffer-composer-installer": "~0.6.0",
         "phpcompatibility/phpcompatibility-wp": "^2.1.0",
