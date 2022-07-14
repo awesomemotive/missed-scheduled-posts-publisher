@@ -30,9 +30,12 @@ on:
 
 jobs:
   php-test:
-    name: PHP
+    name: PHPUniti
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
+      - uses: actions/checkout@v2
+      - name: Install Composer dependencies
+        run: composer install
       - name: Run PHP tests in single site
         run: docker run --rm -v "$PWD:/code" humanmade/plugin-tester --stop-on-error
