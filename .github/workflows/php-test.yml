@@ -1,4 +1,4 @@
-name: Unit Testing
+name: Unit Tests
 
 on:
   push:
@@ -30,11 +30,16 @@ on:
 
 jobs:
   php-test:
-    name: PHPUniti
+    name: PHP Unit Tests
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v2
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.2'
+          tools: composer:1.10.26
       - name: Install Composer dependencies
         run: composer install
       - name: Run PHP tests in single site
