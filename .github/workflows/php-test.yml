@@ -1,0 +1,41 @@
+name: Unit Testing
+
+on:
+  push:
+    branches:
+      - main
+    # Only run if PHP-related files changed.
+    paths:
+      - '.github/workflows/php-test.yml'
+      - '**.php'
+      - 'phpunit.xml.dist'
+      - 'tests/multisite.xml'
+      - 'composer.json'
+      - 'composer.lock'
+  pull_request:
+    branches:
+      - main
+    # Only run if PHP-related files changed.
+    paths:
+      - '.github/workflows/php-test.yml'
+      - '**.php'
+      - 'phpunit.xml.dist'
+      - 'tests/multisite.xml'
+      - 'composer.json'
+      - 'composer.lock'
+    types:
+      - opened
+      - reopened
+      - synchronize
+
+jobs:
+  php-test:
+    name: PHPUniti
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Composer dependencies
+        run: composer install
+      - name: Run PHP tests in single site
+        run: docker run --rm -v "$PWD:/code" humanmade/plugin-tester --stop-on-error
