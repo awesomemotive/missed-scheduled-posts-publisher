@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-    # Only run if PHP-related files changed.
     paths:
       - '.github/workflows/php-test.yml'
       - '**.php'
@@ -15,7 +14,6 @@ on:
   pull_request:
     branches:
       - main
-    # Only run if PHP-related files changed.
     paths:
       - '.github/workflows/php-test.yml'
       - '**.php'
