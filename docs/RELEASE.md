@@ -21,7 +21,7 @@ The release script uses the SVN username to upload the plugin to WordPress.org. 
 
 ## Publishing the release
 
-## Run the release script
+### Run the release script
 
 In your terminal, run the following command:
 
