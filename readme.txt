@@ -79,3 +79,9 @@ To avoid impacting the performance of your WordPress site, the Missed Scheduled 
 = I've enabled this on my site, why can't I see it in the admin? =
 
 Missed Scheduled Posts Publisher is a set-and-forget plugin. There are no settings, since your site's scheduled posts will automatically be checked when the plugin is installed and activated.
+
+== Changelog ==
+
+= 1.1.0 =
+
+* Initial plugin release.
