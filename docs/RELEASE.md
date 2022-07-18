@@ -23,9 +23,9 @@ The release script uses the SVN username to upload the plugin to WordPress.org. 
 
 ### Run the release script
 
-In your terminal, run the following command:
+From the plugin root folder in your terminal, run the following command:
 
-`bash ./.bin/release.sh`
+`bash .bin/release.sh`
 
 This will run the release script and publish the new version to WordPress.org.
 
