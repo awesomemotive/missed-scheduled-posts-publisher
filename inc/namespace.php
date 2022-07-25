@@ -5,8 +5,18 @@ namespace WPB\MissedScheduledPostsPublisher;
 const ACTION              = 'wpb_missed_scheduled_posts_publisher';
 const BATCH_LIMIT         = 20;
 const FALLBACK_MULTIPLIER = 1.1;
-const FREQUENCY           = 900;
 const OPTION_NAME         = 'wpb-missed-scheduled-posts-publisher-last-run';
+
+
+/**
+ * Filters the frequency to allow programmaticaly control.
+ * 
+ * @param int $frequency The frequency in seconds.
+ */
+function get_run_frequency() {
+	$frequency = 900;
+	return (int) apply_filters( 'wpb_missed_scheduled_posts_publisher_frequency', $frequency );
+}
 
 function bootstrap() {
 	add_action( 'send_headers', __NAMESPACE__ . '\\send_headers' );
@@ -79,7 +89,7 @@ function verify_no_priv_nonce( $nonce ) {
  */
 function send_headers() {
 	$last_run = (int) get_option( OPTION_NAME, 0 );
-	if ( $last_run >= ( time() - ( FALLBACK_MULTIPLIER * FREQUENCY ) ) ) {
+	if ( $last_run >= ( time() - ( FALLBACK_MULTIPLIER * get_run_frequency() ) ) ) {
 		return;
 	}
 
@@ -92,7 +102,7 @@ function send_headers() {
  */
 function enqueue_scripts() {
 	$last_run = (int) get_option( OPTION_NAME, 0 );
-	if ( $last_run >= ( time() - ( FALLBACK_MULTIPLIER * FREQUENCY ) ) ) {
+	if ( $last_run >= ( time() - ( FALLBACK_MULTIPLIER * get_run_frequency() ) ) ) {
 		return;
 	}
 
@@ -139,7 +149,7 @@ function enqueue_scripts() {
  */
 function loopback() {
 	$last_run = (int) get_option( OPTION_NAME, 0 );
-	if ( $last_run >= ( time() - FREQUENCY ) ) {
+	if ( $last_run >= ( time() - get_run_frequency() ) ) {
 		return;
 	}
 
@@ -173,7 +183,7 @@ function admin_ajax() {
 	}
 
 	$last_run = (int) get_option( OPTION_NAME, 0 );
-	if ( $last_run >= ( time() - FREQUENCY ) ) {
+	if ( $last_run >= ( time() - get_run_frequency() ) ) {
 		wp_send_json_success();
 	}
 
