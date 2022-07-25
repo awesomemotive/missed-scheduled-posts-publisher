@@ -19,7 +19,17 @@ GITPATH="$CURRENTDIR" # this file should be in the base of your git repository
 # svn config
 TMPPATH="$GITPATH/.tmp-svn" # path to a temp SVN repo. No trailing slash required and don't add trunk.
 SVNURL="https://plugins.svn.wordpress.org/$PLUGINSLUG/" # Remote SVN repo on wordpress.org, with trailing slash
-SVNUSER="peterwilsoncc" # your svn username
+
+# Load variables from .env file
+source .env
+
+# Exit with a prompt if the SVN_USERNAME environment variable is not set.
+if [[ -z "${SVN_USERNAME}" ]]; then
+  echo "SVN_USERNAME is not set. Please set it in the .env file."
+  exit 1
+else
+  SVNUSER="${SVN_USERNAME}"
+fi
 
 # Let's begin...
 echo ".........................................."
