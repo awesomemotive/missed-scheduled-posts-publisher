@@ -11,6 +11,9 @@ The plugin version number needs to be updated in the following files:
 - [`plugin.php`](/plugin.php)
 - [`readme.txt`](/readme.txt)
 
+### Update the `tested up to` version
+
+Before each release, a good practice is to test the plugin with the latest major version of WordPress. After testing, the `tested up to` version in the [`readme.txt`](/readme.txt) and [`plugin.php`](/plugin.php) files should be updated.
 ### Update the changelog
 
 In the [`readme.txt`](/readme.txt) file, update the changelog for the new version.
