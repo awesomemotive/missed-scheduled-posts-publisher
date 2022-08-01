@@ -85,3 +85,10 @@ Missed Scheduled Posts Publisher is a set-and-forget plugin. There are no settin
 = 1.1.0 =
 
 * Initial plugin release.
+
+== 1.0.1 ==
+
+* Improvement: Add a new filter `wpb_missed_scheduled_posts_publisher_frequency` to allows developers to change the frequency of the plugin checks.
+* Test: Add PHP unit tests for the `wpb_missed_scheduled_posts_publisher_frequency` filter.
+* Docs: Add new documentation for the plugin release process.
+* Miscs: Update the plugin package name and description in composer.json.
