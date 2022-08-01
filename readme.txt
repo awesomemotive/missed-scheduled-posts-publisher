@@ -1,8 +1,8 @@
 === Missed Scheduled Posts Publisher by WPBeginner ===
 
-Stable tag:        1.0.0
+Stable tag:        1.0.1
 Requires at least: 5.0
-Tested up to:      5.8
+Tested up to:      6.0
 Requires PHP:      5.6
 License:           GPLv2
 Tags:              Scheduled posts, Missed schedule, Cron
