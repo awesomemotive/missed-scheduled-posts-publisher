@@ -142,6 +142,12 @@ echo "Removing xml files from root directory."
 rm *.xml
 rm *.xml.dist
 
+echo "Removing test files from root directory."
+rm -rf tests
+
+echo "Removing release documentation from root directory."
+rm RELEASE.md
+
 # echo "Removing webpack and remaining config files from root directory."
 # rm webpack.config.js postcss.config.js
 
