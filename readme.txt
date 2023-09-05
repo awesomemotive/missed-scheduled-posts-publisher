@@ -8,31 +8,31 @@ License:           GPLv2
 Tags:              Scheduled posts, Missed schedule, Cron
 Contributors:      WPbeginner, smub, jaredatch, peterwilsoncc, tommcfarlin
 
-Are your scheduled posts not publishing? This plugin fixes the missed schedule error and triggers your scheduled posts to publish without impacting performance.
+Are your scheduled posts missing their publication times? Missed Scheduled Posts Publisher effectively resolves the 'missed scheduled post' error, ensuring that your content is reliably published on time, all while maintaining top-notch website performance.
 
 == Description ==
 
-= WordPress Missed Scheduled Posts Publisher by WPBeginner =
+= WordPress Missed Scheduled Post Publisher by WPBeginner =
 
-Are you seeing a "missed schedule" error on your scheduled posts?
+Do you encounter the "missed scheduled post" error with your scheduled content?
 
-This plugin does one thing and does it well: it fixes the missed schedule error and triggers your scheduled posts to publish on time. We've developed this post scheduler plugin with performance in mind, so it won't affect the speed or performance of your website.
+Our plugin specializes in resolving the "missed scheduled post" issue with precision. It ensures that your scheduled posts consistently meet their publication deadlines. This post scheduler plugin has been meticulously crafted for optimal performance, guaranteeing zero impact on your website's speed and responsiveness.
 
-= What Causes the Missed Schedule Error? =
+= What Causes the Missed Scheduled Post Error? =
 
-Having trouble with WordPress scheduled posts not publishing?
+Not seeing WordPress scheduled posts show up on time?
 
-That's because scheduled posts are triggered to publish by something called "WordPress cron jobs". Cron is a technical term for commands that run on a scheduled time, like your scheduled posts in WordPress.
+WordPress relies on something called "WordPress cron jobs" to make these posts go live as scheduled. Think of "cron" as a fancy way of saying "commands that follow a schedule," just like your WordPress scheduled posts.
 
-Technically, a real cron job will run at the server level. But because WordPress doesn't have access to that level, it runs a simulated cron.
+In the technical world, a real "cron job" operates at the server level. But since WordPress can't access that level directly, it does the next best thing by running a "simulated cron."
 
-These simulated cron jobs, like scheduled posts, are supposed to be triggered whenever a person or bot visits your site. But because it's not a real cron job, sometimes it causes a missed schedule error.
+These simulated cron jobs, including the one for your scheduled posts, are supposed to kick in whenever someone (or even a bot) visits your site. But because it's not the real deal, there are times when it slips up and leads to a "missed schedule" hiccup.
 
-= How to Fix the Missed Schedule Error in WordPress =
+= How Do I Fix the Missed Posts Schedule Error in WordPress =
 
-Every fifteen minutes this post scheduler plugin checks for posts that have the missed schedule error, and will automatically publish them for you.
+Scheduled Post Check: Our post scheduler plugin diligently examines your posts every fifteen minutes to detect any missed schedule errors. If it finds one, it takes the initiative to automatically publish the missed post for you.
 
-Multiple techniques for checking your site's missed posts are used to make sure a scheduled post is not missed.
+Comprehensive Checks: We employ a range of techniques to ensure that no scheduled post slips through the cracks, guaranteeing a seamless posting experience for you.
 
 = Credits =
 
@@ -82,6 +82,15 @@ Missed Scheduled Posts Publisher is a set-and-forget plugin. There are no settin
 
 == Changelog ==
 
+= 2.0.0 =
+
+* Added: Autoload dependencies
+* Added: `CHANGELOG.md`
+* Added: DocBlocks
+* Updated: Composer files to work with Composer 2.0+
+* Updated: `.gitignore` to allow autoloading
+* Updated: "Tested up to..." constraints
+* Updated: `readme.txt`
 
 = 1.0.1 =
 
