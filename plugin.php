@@ -4,7 +4,7 @@
  * Description:       Catches scheduled posts that have been missed and publishes them.
  * Version:           2.0.0
  * Requires at least: 5.0
- * Tested up to:      6.0
+ * Tested up to:      6.3.1
  * Requires PHP:      5.6
  * Author:            WPBeginner
  * Author URI:        https://www.wpbeginner.com/
