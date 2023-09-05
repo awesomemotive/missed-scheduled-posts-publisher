@@ -4,8 +4,13 @@
     "type": "wordpress-plugin",
     "license": "GNU General Public License v2.0 or later",
     "minimum-stability": "stable",
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
     "require-dev": {
-        "dealerdirect/phpcodesniffer-composer-installer": "~0.6.0",
+        "dealerdirect/phpcodesniffer-composer-installer": "1.0.0",
         "phpcompatibility/phpcompatibility-wp": "^2.1.0",
         "wp-coding-standards/wpcs": "~2.3.0",
         "phpunit/phpunit": "^7"

@@ -8,7 +8,10 @@ Thumbs.db
 # Dependencies
 ##############
 /node_modules/
-/vendor/
+/vendor/*
+!/vendor/autoload.php
+!/vendor/composer/
+
 
 # Build files
 #############
