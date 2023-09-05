@@ -10,8 +10,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Autoload dependencies
+- `CHANGELOG.md`
+- DocBlocks
+- Review CTA
 
 ### Updated
 
 - Composer files to work with Composer 2.0+
 - `.gitignore` to allow autoloading
+- "Tested up to..." constraints
+- `readme.txt`
