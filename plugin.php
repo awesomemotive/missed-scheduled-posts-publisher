@@ -13,6 +13,10 @@
  */
 namespace WPB\MissedScheduledPostsPublisher;
 
-require_once __DIR__ . '/inc/namespace.php';
+require_once __DIR__ . '/inc/Review.php';
+add_action('plugins_loaded', function() {
+    (new Review())->load_hooks();
+});
 
+require_once __DIR__ . '/inc/namespace.php';
 bootstrap();
