@@ -1,12 +1,12 @@
 === Missed Scheduled Posts Publisher by WPBeginner ===
 
-Stable tag:        1.0.1
+Stable tag:        2.0.0
 Requires at least: 5.0
-Tested up to:      6.0
+Tested up to:      6.3.1
 Requires PHP:      5.6
 License:           GPLv2
 Tags:              Scheduled posts, Missed schedule, Cron
-Contributors:      WPbeginner, smub, jaredatch, peterwilsoncc
+Contributors:      WPbeginner, smub, jaredatch, peterwilsoncc, tommcfarlin
 
 Are your scheduled posts not publishing? This plugin fixes the missed schedule error and triggers your scheduled posts to publish without impacting performance.
 
