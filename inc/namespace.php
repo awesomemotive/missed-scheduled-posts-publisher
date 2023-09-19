@@ -10,7 +10,7 @@ const OPTION_NAME         = 'wpb-missed-scheduled-posts-publisher-last-run';
 
 /**
  * Filters the frequency to allow programmaticaly control.
- * 
+ *
  * @param int $frequency The frequency in seconds.
  */
 function get_run_frequency() {
@@ -18,6 +18,11 @@ function get_run_frequency() {
 	return (int) apply_filters( 'wpb_missed_scheduled_posts_publisher_frequency', $frequency );
 }
 
+/**
+ * Initializes the plugin by bootstrapping its functionality.
+ *
+ * @return void
+ */
 function bootstrap() {
 	add_action( 'send_headers', __NAMESPACE__ . '\\send_headers' );
 	add_action( 'shutdown', __NAMESPACE__ . '\\loopback' );
