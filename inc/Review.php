@@ -106,7 +106,7 @@ class Review {
 				<p><?php _e( 'Awesome! Could you please do me a big favor and give it a 5-star rating on WordPress to help us spread the word?', 'mspp' ); ?></p>
 				<p style="font-weight: bold;">~ Syed Balkhi<br>Founder of Missed Scheduled Posts Publisher</p>
 				<p>
-				<a style="display: inline-block; margin-right: 10px;" href="https://wordpress.org/support/plugin/wp-call-button/reviews/?filter=5" onclick="delayReviewPrompt(event, 'remove', true, true)" target="_blank"><?php esc_html_e( 'Okay, you deserve it', 'mspp' ); ?></a>
+				<a style="display: inline-block; margin-right: 10px;" href="https://wordpress.org/support/plugin/missed-scheduled-posts-publisher/reviews/?filter=5" onclick="delayReviewPrompt(event, 'remove', true, true)" target="_blank"><?php esc_html_e( 'Okay, you deserve it', 'mspp' ); ?></a>
 				<a style="display: inline-block; margin-right: 10px;" href="#" onclick="delayReviewPrompt(event, 'delay', true, false)"><?php esc_html_e( 'Nope, maybe later', 'mspp' ); ?></a>
 				<a href="#" onclick="delayReviewPrompt(event, 'remove', true, false)"><?php esc_html_e( 'I already did', 'mspp' ); ?></a>
 				</p>
@@ -116,7 +116,7 @@ class Review {
                     <?php _e( 'We\'re sorry to hear you aren\'t enjoying Missed Scheduled Posts Publisher. We would love a chance to improve. Could you take a minute and let us know what we can do better?', 'mspp' ); ?>
                 </p>
 				<p>
-                    <a style="display: inline-block; margin-right: 10px;" href="https://wordpress.org/support/plugin/wp-call-button/reviews/" onclick="delayReviewPrompt(event, 'remove', true, true)" target="_blank"><?php esc_html_e( 'Give Feedback', 'mspp' ); ?></a>
+                    <a style="display: inline-block; margin-right: 10px;" href="https://wordpress.org/support/plugin/missed-scheduled-posts-publisher/reviews/" onclick="delayReviewPrompt(event, 'remove', true, true)" target="_blank"><?php esc_html_e( 'Give Feedback', 'mspp' ); ?></a>
                     <a href="#" onclick="delayReviewPrompt(event, 'remove', true, false)"><?php esc_html_e( 'No thanks', 'mspp' ); ?></a>
 				</p>
 			</div>
